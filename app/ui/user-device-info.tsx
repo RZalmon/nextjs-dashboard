@@ -2,7 +2,7 @@
 import { UAParser } from 'ua-parser-js';
 
 export const UserDeviceInfo = () => {
-  const { browser, device } = UAParser(navigator.userAgent);
+  const { browser, device } = UAParser(window.navigator.userAgent);
 
   return (
     <p className="text-xl text-gray-800 md:text-3xl md:leading-normal">
